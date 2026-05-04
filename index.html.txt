@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Website</title>
+<meta charset="UTF-8">
+<title>Boss Portfolio</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* Header */
+header {
+  background: #111827;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #38bdf8;
+}
+
+/* Button */
+.btn {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Cards */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  margin-top: 50px;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>Hello Boss 😎</h1>
-<p>This is my first website</p>
+<header>
+🔥 My Portfolio
+</header>
+
+<div class="hero">
+  <h1>Hi, I am Boss 😎</h1>
+  <p>I am learning Web Design & Development</p>
+  <button class="btn" onclick="msg()">Contact Me</button>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Web Design</h3>
+    <p>I can design modern websites.</p>
+  </div>
+
+  <div class="card">
+    <h3>Frontend</h3>
+    <p>HTML, CSS, JavaScript skills.</p>
+  </div>
+
+  <div class="card">
+    <h3>Projects</h3>
+    <p>Small apps & websites build.</p>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Boss Portfolio
+</footer>
+
+<script>
+function msg(){
+  alert("Thanks Boss 😎 I will contact you soon!");
+}
+</script>
 
 </body>
 </html>
